@@ -29,12 +29,14 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
-          {/* Professional headshot placeholder */}
+          {/* Professional headshot */}
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1">
-              <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                <i className="fas fa-user text-4xl text-primary"></i>
-              </div>
+              <img
+                src="https://avatars.githubusercontent.com/u/65823392?v=4"
+                alt="Ayushmaan Pandey"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
           

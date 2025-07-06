@@ -36,6 +36,17 @@ export default function Projects() {
       githubUrl: '#',
       liveUrl: '#',
       featured: true
+    },
+    {
+      title: 'Enhanced Salp Swarm Algorithm',
+      description: 'Academic research project improving classification accuracy using bio-inspired optimization algorithms with KNN classifier.',
+      technologies: ['MATLAB', 'Machine Learning', 'Algorithm', 'Research'],
+      category: ['research', 'algorithm'],
+      icon: 'fas fa-brain',
+      gradient: 'from-primary to-accent',
+      githubUrl: 'https://github.com/Ayushmaan-Pandey/Major-Project',
+      liveUrl: null,
+      featured: false
     }
   ];
 
@@ -44,7 +55,8 @@ export default function Projects() {
     { id: 'golang', label: 'Go' },
     { id: 'react', label: 'React' },
     { id: 'fullstack', label: 'Full Stack' },
-    { id: 'backend', label: 'Backend' }
+    { id: 'backend', label: 'Backend' },
+    { id: 'research', label: 'Research' }
   ];
 
   const filteredProjects = activeFilter === 'all' 
