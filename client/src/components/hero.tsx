@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1">
               <img
-                src="https://avatars.githubusercontent.com/u/65823392?v=4"
+                src="/profile-photo.jpg"
                 alt="Ayushmaan Pandey"
                 className="w-full h-full rounded-full object-cover"
               />
