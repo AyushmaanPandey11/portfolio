@@ -60,6 +60,17 @@ export default function Projects() {
       featured: true
     },
     {
+      title: 'Event Booking App',
+      description: 'Secure event booking application built with GoLang and Gin framework, featuring user authentication and SQLite database.',
+      technologies: ['GoLang', 'Gin', 'SQLite', 'JWT', 'Bcrypt'],
+      category: ['golang', 'backend'],
+      icon: 'fas fa-calendar-check',
+      gradient: 'from-secondary to-accent',
+      githubUrl: '#',
+      liveUrl: null,
+      featured: false
+    },
+    {
       title: 'Cross-Currency Payment Interface',
       description: 'End-to-end payment solution facilitating transactions in any currency with pseudonymity. Built with MERN stack and Live Currency API.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Redux', 'Express', 'JWT'],
@@ -75,6 +86,7 @@ export default function Projects() {
   const filters = [
     { id: 'all', label: 'All' },
     { id: 'java', label: 'Java' },
+    { id: 'golang', label: 'Go' },
     { id: 'react', label: 'React' },
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'backend', label: 'Backend' },
