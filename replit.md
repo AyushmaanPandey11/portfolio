@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack portfolio web application built for showcasing Ayushmaan Pandey's professional experience, skills, and projects. The application features a modern, responsive design with a React frontend and Express backend, utilizing PostgreSQL for data storage and styled with Tailwind CSS and shadcn/ui components.
+This is a frontend-only portfolio web application built for showcasing Ayushmaan Pandey's professional experience, skills, and projects. The application features a modern, responsive design with React and TypeScript, styled with Tailwind CSS and shadcn/ui components, and includes dark mode support.
 
 ## System Architecture
 
@@ -14,13 +14,11 @@ This is a full-stack portfolio web application built for showcasing Ayushmaan Pa
 - **Routing**: Wouter for lightweight client-side routing
 - **Build Tool**: Vite for fast development and optimized builds
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript with ESM modules
-- **Database**: PostgreSQL with Drizzle ORM
-- **Database Provider**: Neon Database (@neondatabase/serverless)
-- **Session Management**: Connect-pg-simple for PostgreSQL-based sessions
-- **Development**: Hot reloading with Vite integration
+### Architecture
+- **Frontend Only**: Pure React application with no backend dependencies
+- **Contact Form**: Uses mailto links for direct email communication
+- **Data Storage**: Static data embedded in components (no database required)
+- **Development**: Vite development server with hot reloading
 
 ## Key Components
 
@@ -36,36 +34,28 @@ This is a full-stack portfolio web application built for showcasing Ayushmaan Pa
   - `use-toast`: Toast notification system
   - `use-mobile`: Mobile breakpoint detection
 
-### Backend Structure
-- **Storage Layer**: Abstracted storage interface with in-memory implementation
-- **Route Management**: Centralized route registration system
-- **Development Integration**: Vite middleware for development server
-- **Error Handling**: Centralized error handling middleware
-
-### Database Schema
-- **Users Table**: Basic user authentication structure
-  - ID (serial primary key)
-  - Username (unique text field)
-  - Password (text field)
-- **Validation**: Zod schemas for type-safe data validation
+### Project Structure
+- **Components**: Modular React components for each portfolio section
+- **Static Assets**: Profile photo and resume served from public directory
+- **Contact System**: Frontend-only contact form using mailto links
+- **Project Data**: Static project information embedded in components
 
 ## Data Flow
 
-1. **Client Requests**: Frontend makes API calls using React Query
-2. **Server Processing**: Express routes handle requests and interact with storage layer
-3. **Database Operations**: Drizzle ORM manages PostgreSQL interactions
-4. **Response Handling**: Structured JSON responses with error handling
-5. **State Management**: React Query caches and synchronizes server state
+1. **Static Content**: All portfolio data is statically defined in React components
+2. **User Interaction**: Contact form creates mailto links for direct email
+3. **Asset Loading**: Images and documents served from public directory
+4. **Navigation**: Smooth scrolling between sections using JavaScript
+5. **State Management**: React useState for component-level state (dark mode, form data)
 
 ## External Dependencies
 
 ### Core Technologies
-- **Database**: PostgreSQL via Neon Database serverless
-- **Authentication**: JWT tokens with bcrypt password hashing
+- **Static Site**: No backend or database dependencies
+- **Email Integration**: Direct mailto links for contact functionality
 - **Development Tools**: 
   - Replit integration for development environment
-  - ESBuild for production bundling
-  - Drizzle Kit for database migrations
+  - Vite for development server and production builds
 
 ### UI/UX Libraries
 - **Component Library**: Comprehensive shadcn/ui component set
@@ -76,27 +66,26 @@ This is a full-stack portfolio web application built for showcasing Ayushmaan Pa
 ## Deployment Strategy
 
 ### Development Environment
-- **Hot Reloading**: Vite dev server with Express middleware integration
-- **Database**: Development database connection via environment variables
-- **Asset Serving**: Static assets served through Vite in development
+- **Hot Reloading**: Vite development server with instant updates
+- **Asset Serving**: Static assets served directly from public directory
+- **No Database**: All data is static and embedded in components
 
 ### Production Build
-- **Frontend**: Vite builds optimized React application to `dist/public`
-- **Backend**: ESBuild bundles Express server to `dist/index.js`
-- **Database Migrations**: Drizzle Kit handles schema updates
-- **Environment**: Production configuration via NODE_ENV
+- **Frontend Only**: Vite builds optimized React application to `dist`
+- **Static Assets**: All files ready for static hosting
+- **No Server**: Can be deployed to any static hosting platform
 
 ### Build Commands
 - `npm run dev`: Development server with hot reloading
-- `npm run build`: Production build for both frontend and backend
-- `npm run start`: Production server startup
-- `npm run db:push`: Database schema synchronization
+- `npm run build`: Production build for static deployment
+- `npm run preview`: Preview production build locally
 
 ## Changelog
 
 ```
 Changelog:
 - July 06, 2025. Initial setup
+- July 07, 2025. Converted to frontend-only application - removed server, database, and API dependencies
 ```
 
 ## User Preferences
