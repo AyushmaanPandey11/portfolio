@@ -4,7 +4,7 @@ export default function Skills() {
       title: 'Languages',
       icon: 'fas fa-code',
       color: 'primary',
-      skills: ['Go', 'Java', 'JavaScript', 'TypeScript', 'C++', 'Rust', 'Motoko']
+      skills: ['Java', 'JavaScript', 'TypeScript', 'Go', 'Solidity', 'C++', 'Rust']
     },
     {
       title: 'Frontend',
@@ -22,7 +22,7 @@ export default function Skills() {
       title: 'Database & Tools',
       icon: 'fas fa-database',
       color: 'primary',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Docker', 'Git', 'AWS', 'Postman']
+      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'Docker', 'Git', 'AWS']
     }
   ];
 

@@ -102,7 +102,7 @@ export default function Contact() {
             <div className="mt-8">
               <h4 className="text-xl font-bold mb-4">Connect with me</h4>
               <div className="flex space-x-4">
-                <a href="https://github.com/Ayushmaan-Pandey" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
+                <a href="https://github.com/AyushmaanPandey11" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
                   <i className="fab fa-github"></i>
                 </a>
                 <a href="mailto:ayushmaan1122pandey@gmail.com" className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary hover:bg-secondary hover:text-secondary-foreground transition-colors">

@@ -5,58 +5,81 @@ export default function Projects() {
 
   const projects = [
     {
+      title: 'Journal App',
+      description: 'Secure journal application built with Spring Boot, Spring Security, JWT token system, and MongoDB for personal diary management.',
+      technologies: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'MongoDB'],
+      category: ['fullstack', 'java', 'backend'],
+      icon: 'fas fa-book',
+      gradient: 'from-primary to-secondary',
+      githubUrl: 'https://github.com/AyushmaanPandey11/journal-app',
+      liveUrl: null,
+      featured: true
+    },
+    {
+      title: 'Job Portal',
+      description: 'Full-stack job portal developed with Spring Boot, Spring Security, JWT authentication, and PostgreSQL database.',
+      technologies: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'JDBC'],
+      category: ['fullstack', 'java', 'backend'],
+      icon: 'fas fa-briefcase',
+      gradient: 'from-secondary to-accent',
+      githubUrl: 'https://github.com/AyushmaanPandey11/job-portal',
+      liveUrl: null,
+      featured: true
+    },
+    {
+      title: 'Movie Recommendation App',
+      description: 'React-based movie recommendation system using free movie APIs, Firebase authentication, and Redux for state management.',
+      technologies: ['React', 'Redux', 'Firebase', 'Movie API', 'JavaScript'],
+      category: ['frontend', 'react'],
+      icon: 'fas fa-film',
+      gradient: 'from-accent to-primary',
+      githubUrl: 'https://github.com/AyushmaanPandey11/Movie-Recommendation-App',
+      liveUrl: null,
+      featured: true
+    },
+    {
+      title: 'Food Delivery App',
+      description: 'Food delivery application using Swiggy API for restaurant and food selection with cart management functionality.',
+      technologies: ['React', 'Redux', 'Swiggy API', 'JavaScript', 'CSS'],
+      category: ['frontend', 'react'],
+      icon: 'fas fa-utensils',
+      gradient: 'from-primary to-secondary',
+      githubUrl: 'https://github.com/AyushmaanPandey11/Food-Delivery-App',
+      liveUrl: null,
+      featured: true
+    },
+    {
+      title: 'Kickstarter Blockchain',
+      description: 'Ethereum blockchain-based crowdfunding platform solving kickstarter scam issues by giving fund allocation power to contributors.',
+      technologies: ['Solidity', 'Ethereum', 'Blockchain', 'Smart Contracts', 'Web3'],
+      category: ['blockchain', 'solidity'],
+      icon: 'fas fa-coins',
+      gradient: 'from-secondary to-accent',
+      githubUrl: 'https://github.com/AyushmaanPandey11/kickstarter',
+      liveUrl: null,
+      featured: true
+    },
+    {
       title: 'Cross-Currency Payment Interface',
       description: 'End-to-end payment solution facilitating transactions in any currency with pseudonymity. Built with MERN stack and Live Currency API.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Redux', 'Express', 'JWT'],
       category: ['fullstack', 'react'],
       icon: 'fas fa-credit-card',
-      gradient: 'from-primary to-secondary',
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Event Booking App',
-      description: 'Secure event booking application built with GoLang and Gin framework, featuring user authentication and SQLite database.',
-      technologies: ['GoLang', 'Gin', 'SQLite', 'JWT', 'Bcrypt'],
-      category: ['golang', 'backend'],
-      icon: 'fas fa-calendar-check',
-      gradient: 'from-secondary to-accent',
-      githubUrl: '#',
-      liveUrl: null,
-      featured: true
-    },
-    {
-      title: 'Real-time Chat Application',
-      description: 'Full-stack chat application with real-time messaging using WebSocket, built with React TypeScript and deployed on Render.',
-      technologies: ['React', 'TypeScript', 'WebSocket', 'Node.js', 'Render'],
-      category: ['fullstack', 'react', 'realtime'],
-      icon: 'fas fa-comments',
       gradient: 'from-accent to-primary',
       githubUrl: '#',
       liveUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Enhanced Salp Swarm Algorithm',
-      description: 'Academic research project improving classification accuracy using bio-inspired optimization algorithms with KNN classifier.',
-      technologies: ['MATLAB', 'Machine Learning', 'Algorithm', 'Research'],
-      category: ['research', 'algorithm'],
-      icon: 'fas fa-brain',
-      gradient: 'from-primary to-accent',
-      githubUrl: 'https://github.com/Ayushmaan-Pandey/Major-Project',
-      liveUrl: null,
       featured: false
     }
   ];
 
   const filters = [
     { id: 'all', label: 'All' },
-    { id: 'golang', label: 'Go' },
+    { id: 'java', label: 'Java' },
     { id: 'react', label: 'React' },
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'backend', label: 'Backend' },
-    { id: 'research', label: 'Research' }
+    { id: 'frontend', label: 'Frontend' },
+    { id: 'blockchain', label: 'Blockchain' }
   ];
 
   const filteredProjects = activeFilter === 'all' 

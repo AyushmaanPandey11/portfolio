@@ -39,15 +39,15 @@ export default function About() {
               <h3 className="text-xl font-bold mb-6">Quick Stats</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">2+</div>
-                  <div className="text-muted-foreground">Years Experience</div>
+                  <div className="text-3xl font-bold text-primary mb-2">3+</div>
+                  <div className="text-muted-foreground">Years Learning</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary mb-2">10+</div>
                   <div className="text-muted-foreground">Technologies</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">3+</div>
+                  <div className="text-3xl font-bold text-accent mb-2">6+</div>
                   <div className="text-muted-foreground">Major Projects</div>
                 </div>
                 <div className="text-center">
