@@ -96,6 +96,7 @@ This is a full-stack portfolio web application built for showcasing Ayushmaan Pa
 
 ```
 Changelog:
+- July 07, 2025. Converted React portfolio to standalone HTML file with CDN dependencies
 - July 06, 2025. Initial setup
 ```
 
