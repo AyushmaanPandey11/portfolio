@@ -5,6 +5,17 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Horizontally Scaled Websocket",
+      description:
+        "Backend application with real-time messaging using WebSocket horizontally scaled using Pub/Sub and follows Singleton Pattern.",
+      technologies: ["TypeScript", "WebSocket", "Node.js", "Redis Pub/Sub"],
+      category: ["Backend", "realtime", "websocket", "Scaling"],
+      icon: "fas fa-comments",
+      gradient: "from-accent to-primary",
+      githubUrl: "https://github.com/AyushmaanPandey11/scalable-chat",
+      featured: true,
+    },
+    {
       title: "Real-time Chat Application",
       description:
         "Full-stack chat application with real-time messaging using WebSocket, built with React TypeScript and deployed on Render.",
