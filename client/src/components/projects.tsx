@@ -5,11 +5,57 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Stock Exchange(LADDOO_INR)",
+      description:
+        "Exchange assets( Laddoo with INR ) using websockets and orderbook server for filling orders using in memory variable for faster realtime data. High-Level System having Api Server, Engine, Websockets and TimeScaleDb, Redis Queue & PubSub and Nextjs Frontend.",
+      technologies: [
+        "TypeScript",
+        "Redis Pub/Subs",
+        "Redis Queues",
+        "Engine",
+        "Websockets",
+        "Next.js",
+        "Postgres",
+        "Docker",
+        "Node.js",
+      ],
+      category: [
+        "Backend",
+        "Redis",
+        "Scaling",
+        "advance backend",
+        "websockets",
+        "fullstack",
+        "realtime",
+      ],
+      icon: "fas fa-comments",
+      gradient: "from-accent to-primary",
+      githubUrl: "https://github.com/AyushmaanPandey11/stock-exchange",
+      featured: true,
+    },
+    {
+      title: "gRPC Backend Implementation",
+      description:
+        "Backend application using gRPC and Proto Buffs to optimise the communication between systems.",
+      technologies: ["TypeScript", "gRPC", "Node.js"],
+      category: ["Backend", "gRPC", "Scaling", "advance backend"],
+      icon: "fas fa-comments",
+      gradient: "from-accent to-primary",
+      githubUrl: "https://github.com/AyushmaanPandey11/grpc-implementaion",
+      featured: true,
+    },
+    {
       title: "Horizontally Scaled Websocket",
       description:
         "Backend application with real-time messaging using WebSocket horizontally scaled using Pub/Sub and follows Singleton Pattern.",
       technologies: ["TypeScript", "WebSocket", "Node.js", "Redis Pub/Sub"],
-      category: ["Backend", "realtime", "websocket", "Scaling"],
+      category: [
+        "Backend",
+        "realtime",
+        "websocket",
+        "Scaling",
+        "advance backend",
+      ],
       icon: "fas fa-comments",
       gradient: "from-accent to-primary",
       githubUrl: "https://github.com/AyushmaanPandey11/scalable-chat",
@@ -20,7 +66,13 @@ export default function Projects() {
       description:
         "Full-stack chat application with real-time messaging using WebSocket, built with React TypeScript and deployed on Render.",
       technologies: ["React", "TypeScript", "WebSocket", "Node.js", "Render"],
-      category: ["fullstack", "react", "realtime", "websocket"],
+      category: [
+        "fullstack",
+        "react",
+        "realtime",
+        "websocket",
+        "advance backend",
+      ],
       icon: "fas fa-comments",
       gradient: "from-accent to-primary",
       githubUrl: "https://github.com/AyushmaanPandey11/chat-app-ws",
@@ -143,6 +195,7 @@ export default function Projects() {
     { id: "frontend", label: "Frontend" },
     { id: "blockchain", label: "Blockchain" },
     { id: "websocket", label: "Websockets" },
+    { id: "advance backend", label: "Advance Backend" },
   ];
 
   const filteredProjects =
