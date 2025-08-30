@@ -20,9 +20,7 @@ export default function Projects() {
         "Node.js",
       ],
       category: [
-        "Backend",
-        "Redis",
-        "Scaling",
+        "backend",
         "advance backend",
         "websockets",
         "fullstack",
@@ -37,8 +35,8 @@ export default function Projects() {
       title: "gRPC Backend Implementation",
       description:
         "Backend application using gRPC and Proto Buffs to optimise the communication between systems.",
-      technologies: ["TypeScript", "gRPC", "Node.js"],
-      category: ["Backend", "gRPC", "Scaling", "advance backend"],
+      technologies: ["TypeScript", "gRPC", "Node.js", "Scaling"],
+      category: ["backend", "advance backend"],
       icon: "fas fa-comments",
       gradient: "from-accent to-primary",
       githubUrl: "https://github.com/AyushmaanPandey11/grpc-implementaion",
@@ -48,14 +46,14 @@ export default function Projects() {
       title: "Horizontally Scaled Websocket",
       description:
         "Backend application with real-time messaging using WebSocket horizontally scaled using Pub/Sub and follows Singleton Pattern.",
-      technologies: ["TypeScript", "WebSocket", "Node.js", "Redis Pub/Sub"],
-      category: [
-        "Backend",
-        "realtime",
-        "websocket",
+      technologies: [
+        "TypeScript",
+        "WebSocket",
+        "Node.js",
+        "Redis Pub/Sub",
         "Scaling",
-        "advance backend",
       ],
+      category: ["backend", "realtime", "websocket", "advance backend"],
       icon: "fas fa-comments",
       gradient: "from-accent to-primary",
       githubUrl: "https://github.com/AyushmaanPandey11/scalable-chat",
