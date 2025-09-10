@@ -53,7 +53,7 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  const port = 5000;
+  const port = 5001;
   const host = process.platform === "win32" ? "127.0.0.1" : "0.0.0.0";
   server
     .listen(port, host, () => {
