@@ -18,7 +18,7 @@ export default function Skills() {
       title: "Frontend",
       icon: "fas fa-palette",
       color: "secondary",
-      skills: ["React", "Redux", "Tailwind CSS", "HTML5", "NextJs"],
+      skills: ["React", "Redux", "Tailwind CSS", "HTML5", "NextJs", "WebRTC"],
     },
     {
       title: "Backend",

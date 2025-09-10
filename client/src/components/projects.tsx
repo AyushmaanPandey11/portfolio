@@ -43,6 +43,18 @@ export default function Projects() {
       featured: true,
     },
     {
+      title: "Video Chat Application",
+      description:
+        "Full stack application with real-time Video Chat using WebSocket and WebRTC.",
+      technologies: ["TypeScript", "WebSocket", "Node.js", "React", "WebRTC"],
+      category: ["fullstack", "realtime", "websocket", "react", "frontend"],
+      icon: "fas fa-comments",
+      gradient: "from-accent to-primary",
+      githubUrl: "https://github.com/AyushmaanPandey11/video-chat-app",
+      liveUrl: "https://video-chat-app-swart-delta.vercel.app/",
+      featured: true,
+    },
+    {
       title: "Horizontally Scaled Websocket",
       description:
         "Backend application with real-time messaging using WebSocket horizontally scaled using Pub/Sub and follows Singleton Pattern.",
