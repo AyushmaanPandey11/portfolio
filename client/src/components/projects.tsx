@@ -47,7 +47,7 @@ export default function Projects() {
       description:
         "Full stack application with real-time Video Chat using WebSocket and WebRTC.",
       technologies: ["TypeScript", "WebSocket", "Node.js", "React", "WebRTC"],
-      category: ["fullstack", "realtime", "websocket", "react", "frontend"],
+      category: ["fullstack", "websocket", "react", "frontend"],
       icon: "fas fa-comments",
       gradient: "from-accent to-primary",
       githubUrl: "https://github.com/AyushmaanPandey11/video-chat-app",
